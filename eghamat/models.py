@@ -1,9 +1,8 @@
 from django.db import models
 
 
-# Create your models here.
 class Room(models.Model):
-    Room_Zarfiat = models.IntegerField()
+    Room_Capacity = models.IntegerField()
     Room_Price = models.IntegerField()
     Room_type = models.CharField(max_length=50)
     Room_Image = models.ImageField(upload_to='images/', null=True, blank=True)
